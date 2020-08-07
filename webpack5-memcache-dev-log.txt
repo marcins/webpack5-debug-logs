@@ -1,0 +1,207 @@
+Memory Cache Cold Start
+-----------------------
+
+<i> [webpack.Progress]  | 57 ms setup > initialize
+<i> [webpack.Progress]  | 11 ms setup > compilation
+<i> [webpack.Progress] 77 ms setup
+<i> [webpack.Progress]  | 73 ms building > entries dependencies modules
+<i> [webpack.Progress]  | 19 ms building > import loader ./node_modules/thread-loader/dist/cjs.js
+<i> [webpack.Progress]  | 58 ms building > import loader ./scripts/webpack/custom-babel-loader.js
+<w> [webpack.Progress]  | 5262 ms building > entries dependencies modules
+<i> [webpack.Progress]  | 64 ms building > import loader ./node_modules/css-loader/dist/cjs.js
+<i> [webpack.Progress]  | 44 ms building > import loader ./node_modules/postcss-loader/lib/index.js
+<w> [webpack.Progress]  | 4316 ms building > entries dependencies modules
+<i> [webpack.Progress]  | 34 ms building > import loader ./node_modules/url-loader/dist/cjs.js
+<e> [webpack.Progress]  | 15416 ms building > entries dependencies modules
+<e> [webpack.Progress]  | 68016 ms building > entries dependencies modules
+<e> [webpack.Progress] 93309 ms building
+<i> [webpack.Progress]  |  | 712 ms finish module graph > FlagDependencyExportsPlugin
+<w> [webpack.Progress]  | 1553 ms sealing > finish module graph
+<i> [webpack.Progress]  |  | 97 ms plugins > WarnCaseSensitiveModulesPlugin
+<i> [webpack.Progress]  | 97 ms sealing > plugins
+<i> [webpack.Progress]  |  | 219 ms dependencies optimization > SideEffectsFlagPlugin
+<i> [webpack.Progress]  | 220 ms sealing > dependencies optimization
+<w> [webpack.Progress]  | 5987 ms sealing > chunk graph
+<i> [webpack.Progress]  |  | 32 ms chunk optimization > EnsureChunkConditionsPlugin
+<i> [webpack.Progress]  |  | 13 ms chunk optimization > MergeDuplicateChunksPlugin
+<w> [webpack.Progress]  |  | 2415 ms chunk optimization > SplitChunksPlugin
+<w> [webpack.Progress]  | 2462 ms sealing > chunk optimization
+<i> [webpack.Progress]  |  | 313 ms module ids > NamedModuleIdsPlugin
+<i> [webpack.Progress]  | 313 ms sealing > module ids
+<i> [webpack.Progress]  |  | 11 ms before chunk ids > AnonChunkNamingPlugin
+<i> [webpack.Progress]  | 11 ms sealing > before chunk ids
+<i> [webpack.Progress]  | 31 ms sealing > after chunk id optimization
+<i> [webpack.Progress]  |  | 16 ms record modules > RecordIdsPlugin
+<i> [webpack.Progress]  | 16 ms sealing > record modules
+<w> [webpack.Progress]  | 1737 ms sealing > module hashing
+<w> [webpack.Progress]  | 4953 ms sealing > code generation
+<i> [webpack.Progress]  | 303 ms sealing > runtime requirements
+<i> [webpack.Progress]  | 624 ms sealing > hashing
+<i> [webpack.Progress]  | 26 ms sealing > module assets processing
+<w> [webpack.Progress]  | 1869 ms sealing > chunk assets processing
+<i> [webpack.Progress]  |  | 296 ms asset processing > LanugagePackChunks
+<i> [webpack.Progress]  |  | 12 ms asset processing > WrapperPlugin
+<i> [webpack.Progress]  | 308 ms sealing > asset processing
+<i> [webpack.Progress]  | 42 ms sealing > after asset optimization
+<e> [webpack.Progress] 20559 ms sealing
+<i> [webpack.Progress]  |  | 24 ms emit > ReactLooselyLazyPlugin
+<e> [webpack.Progress]  | 12089 ms emitting > emit
+<i> [webpack.Progress]  |  | 27 ms after emit > SizeLimitsPlugin
+<i> [webpack.Progress]  | 28 ms emitting > after emit
+<e> [webpack.Progress] 12118 ms emitting
+<i> [webpack.Progress]  |  | 211 ms plugins > webpack-build-notifier
+<i> [webpack.Progress]  |  | 635 ms plugins > webpack-dev-server
+<i> [webpack.Progress]  | 848 ms done > plugins
+<i> [webpack.Progress] 849 ms done
+⚠ ｢wdm｣: Hash: 33dce984356cb46a94e0
+Version: webpack 5.0.0-beta.24
+Time: 126006 ms
+Built at: 2020-08-07 10:11:58
+Entrypoint vendor [big] = assets/manifest.0ce05363eab15c173570.js assets/vendor.a8cae8c3314e24b58401.js
+Entrypoint vendor-entry [big] = assets/manifest.0ce05363eab15c173570.js assets/vendor-entry.1c051e12fc2680ff6199.js
+Entrypoint commons [big] = assets/manifest.0ce05363eab15c173570.js assets/commons.9d9c7ec0c2bce6de2b16.js (assets/error-modal.445cf74c8219cb8b3a2a0136bd14bc32.svg)
+Entrypoint commons-entry [big] = assets/manifest.0ce05363eab15c173570.js assets/commons-entry.467fb79ff533b14587e8.js (assets/error-modal.445cf74c8219cb8b3a2a0136bd14bc32.svg)
+Entrypoint jira-spa [big] = assets/manifest.0ce05363eab15c173570.js assets/jira-spa~atlaskit.887f923f3a6e4369b1ef.js assets/jira-spa~vendor.4bbb76cbc3ba869db969.js assets/jira-spa.b5d86effb29cf7e675f6.js (assets/error-modal.445cf74c8219cb8b3a2a0136bd14bc32.svg assets/error.000de722eb744cbf1391a18c82205533.svg assets/image.0d359ff4c12281f625895c64ac7356f1.svg assets/not-found-error.cf5726ecfd7d655c51d5b4427e716990.svg) (prefetch: assets/atlassiansox-cross-flow-support-deferred.06bd1b4ee9181d6ba178.js)
+Entrypoint ssr-hydration-fix = assets/manifest.0ce05363eab15c173570.js assets/ssr-hydration-fix.6dcbcbe0fd55f01d2b9e.js
+Entrypoint loading-bar-controller = assets/manifest.0ce05363eab15c173570.js assets/loading-bar-controller.ac8106d93136235e6a57.js
+Entrypoint rapidboard = assets/manifest.0ce05363eab15c173570.js assets/rapidboard.7e607a8885093e9ba307.js
+Entrypoint global-issue-navigator = assets/manifest.0ce05363eab15c173570.js assets/global-issue-navigator.b577202dc5b7a4e3ee57.js
+Entrypoint issue-app = assets/manifest.0ce05363eab15c173570.js assets/issue-app.8bce80fff37c7c81ae0a.js
+Entrypoint track-clicks-before-tti = assets/manifest.0ce05363eab15c173570.js assets/track-clicks-before-tti.7c6a56dcf04c5f3e323c.js
+ℹ ｢wdm｣: Compiled with warnings.
+
+Change 1
+--------
+ℹ ｢wdm｣: Compiling...
+<i> [webpack.Progress]  | 343 ms setup > compile
+<i> [webpack.Progress]  |  | 19 ms compilation > ChunkPrefetchPreloadPlugin
+<i> [webpack.Progress]  | 31 ms setup > compilation
+<i> [webpack.Progress] 378 ms setup
+<i> [webpack.Progress]  | 159 ms building > entries dependencies modules
+<w> [webpack.Progress]  | 5920 ms building > entries dependencies modules
+<w> [webpack.Progress]  | 2326 ms building > entries dependencies modules
+<e> [webpack.Progress]  | 60459 ms building > entries dependencies modules
+<e> [webpack.Progress] 68866 ms building
+<i> [webpack.Progress]  |  | 382 ms finish module graph > FlagDependencyExportsPlugin
+<w> [webpack.Progress]  | 1306 ms sealing > finish module graph
+<i> [webpack.Progress]  |  | 108 ms plugins > WarnCaseSensitiveModulesPlugin
+<i> [webpack.Progress]  | 109 ms sealing > plugins
+<i> [webpack.Progress]  |  | 238 ms dependencies optimization > SideEffectsFlagPlugin
+<i> [webpack.Progress]  | 239 ms sealing > dependencies optimization
+<w> [webpack.Progress]  | 6521 ms sealing > chunk graph
+<i> [webpack.Progress]  |  | 55 ms chunk optimization > EnsureChunkConditionsPlugin
+<w> [webpack.Progress]  |  | 2637 ms chunk optimization > SplitChunksPlugin
+<w> [webpack.Progress]  | 2701 ms sealing > chunk optimization
+<i> [webpack.Progress]  |  | 99 ms module reviving > RecordIdsPlugin
+<i> [webpack.Progress]  | 99 ms sealing > module reviving
+<i> [webpack.Progress]  |  | 221 ms module ids > NamedModuleIdsPlugin
+<i> [webpack.Progress]  | 221 ms sealing > module ids
+<i> [webpack.Progress]  |  | 12 ms before chunk ids > AnonChunkNamingPlugin
+<i> [webpack.Progress]  | 12 ms sealing > before chunk ids
+<i> [webpack.Progress]  | 12 ms sealing > after chunk id optimization
+<i> [webpack.Progress]  |  | 16 ms record modules > RecordIdsPlugin
+<i> [webpack.Progress]  | 16 ms sealing > record modules
+<i> [webpack.Progress]  |  | 24 ms record chunks > RecordIdsPlugin
+<i> [webpack.Progress]  | 25 ms sealing > record chunks
+<w> [webpack.Progress]  | 1688 ms sealing > module hashing
+<i> [webpack.Progress]  | 450 ms sealing > code generation
+<i> [webpack.Progress]  | 345 ms sealing > runtime requirements
+<i> [webpack.Progress]  | 621 ms sealing > hashing
+<i> [webpack.Progress]  | 52 ms sealing > module assets processing
+<w> [webpack.Progress]  | 1682 ms sealing > chunk assets processing
+<i> [webpack.Progress]  |  | 365 ms asset processing > LanugagePackChunks
+<i> [webpack.Progress]  |  | 11 ms asset processing > WrapperPlugin
+<i> [webpack.Progress]  | 376 ms sealing > asset processing
+<i> [webpack.Progress]  | 49 ms sealing > after asset optimization
+<e> [webpack.Progress] 16539 ms sealing
+<i> [webpack.Progress]  |  | 33 ms emit > ReactLooselyLazyPlugin
+<w> [webpack.Progress]  | 7888 ms emitting > emit
+<i> [webpack.Progress]  |  | 26 ms after emit > SizeLimitsPlugin
+<i> [webpack.Progress]  | 27 ms emitting > after emit
+<w> [webpack.Progress] 7916 ms emitting
+<i> [webpack.Progress]  |  | 376 ms plugins > webpack-build-notifier
+<i> [webpack.Progress]  |  | 665 ms plugins > webpack-dev-server
+<w> [webpack.Progress]  | 1041 ms done > plugins
+<w> [webpack.Progress] 1044 ms done
+⚠ ｢wdm｣: Hash: 1a45c514e14a028cacdc
+Version: webpack 5.0.0-beta.24
+Time: 93700 ms
+Built at: 2020-08-07 10:14:58
+Entrypoint vendor = assets/manifest.f7e752c8ae9711911158.js assets/vendor.a8cae8c3314e24b58401.js
+Entrypoint vendor-entry = assets/manifest.f7e752c8ae9711911158.js assets/vendor-entry.1c051e12fc2680ff6199.js
+Entrypoint commons [big] = assets/manifest.f7e752c8ae9711911158.js assets/commons.0a4e3370c4d826cf9562.js (assets/error-modal.445cf74c8219cb8b3a2a0136bd14bc32.svg)
+Entrypoint commons-entry [big] = assets/manifest.f7e752c8ae9711911158.js assets/commons-entry.f5e4e3189838a8c22d5d.js (assets/error-modal.445cf74c8219cb8b3a2a0136bd14bc32.svg)
+Entrypoint jira-spa [big] = assets/manifest.f7e752c8ae9711911158.js assets/jira-spa~atlaskit.2f1f4ba722e2334f41d8.js assets/jira-spa~vendor.565361416e372f7c5947.js assets/jira-spa.98a457302f5088e4ecc1.js (assets/error-modal.445cf74c8219cb8b3a2a0136bd14bc32.svg assets/error.000de722eb744cbf1391a18c82205533.svg assets/image.0d359ff4c12281f625895c64ac7356f1.svg assets/not-found-error.cf5726ecfd7d655c51d5b4427e716990.svg) (prefetch: assets/atlassiansox-cross-flow-support-deferred.06bd1b4ee9181d6ba178.js)
+Entrypoint ssr-hydration-fix = assets/manifest.f7e752c8ae9711911158.js assets/ssr-hydration-fix.6dcbcbe0fd55f01d2b9e.js
+Entrypoint loading-bar-controller = assets/manifest.f7e752c8ae9711911158.js assets/loading-bar-controller.ac8106d93136235e6a57.js
+Entrypoint rapidboard = assets/manifest.f7e752c8ae9711911158.js assets/rapidboard.7e607a8885093e9ba307.js
+Entrypoint global-issue-navigator = assets/manifest.f7e752c8ae9711911158.js assets/global-issue-navigator.b577202dc5b7a4e3ee57.js
+Entrypoint issue-app = assets/manifest.f7e752c8ae9711911158.js assets/issue-app.8bce80fff37c7c81ae0a.js
+Entrypoint track-clicks-before-tti = assets/manifest.f7e752c8ae9711911158.js assets/track-clicks-before-tti.7c6a56dcf04c5f3e323c.js
+ℹ ｢wdm｣: Compiled with warnings.
+
+Change 2
+--------
+ℹ ｢wdm｣: Compiling...
+<i> [webpack.Progress]  | 784 ms setup > compile
+<i> [webpack.Progress]  |  | 38 ms compilation > SplitChunksPlugin
+<i> [webpack.Progress]  |  | 47 ms compilation > EntryPlugin
+<i> [webpack.Progress]  | 94 ms setup > compilation
+<i> [webpack.Progress] 886 ms setup
+<e> [webpack.Progress]  | 13445 ms building > entries dependencies modules
+<e> [webpack.Progress] 13447 ms building
+<i> [webpack.Progress]  |  | 12 ms finish module graph > InferAsyncModulesPlugin
+<i> [webpack.Progress]  |  | 406 ms finish module graph > FlagDependencyExportsPlugin
+<w> [webpack.Progress]  | 1394 ms sealing > finish module graph
+<i> [webpack.Progress]  |  | 124 ms plugins > WarnCaseSensitiveModulesPlugin
+<i> [webpack.Progress]  | 124 ms sealing > plugins
+<i> [webpack.Progress]  |  | 265 ms dependencies optimization > SideEffectsFlagPlugin
+<i> [webpack.Progress]  | 266 ms sealing > dependencies optimization
+<w> [webpack.Progress]  | 7223 ms sealing > chunk graph
+<i> [webpack.Progress]  |  | 58 ms chunk optimization > EnsureChunkConditionsPlugin
+<w> [webpack.Progress]  |  | 2781 ms chunk optimization > SplitChunksPlugin
+<w> [webpack.Progress]  | 2848 ms sealing > chunk optimization
+<i> [webpack.Progress]  |  | 49 ms module reviving > RecordIdsPlugin
+<i> [webpack.Progress]  | 49 ms sealing > module reviving
+<i> [webpack.Progress]  |  | 195 ms module ids > NamedModuleIdsPlugin
+<i> [webpack.Progress]  | 195 ms sealing > module ids
+<i> [webpack.Progress]  |  | 13 ms before chunk ids > AnonChunkNamingPlugin
+<i> [webpack.Progress]  | 13 ms sealing > before chunk ids
+<i> [webpack.Progress]  |  | 22 ms chunk ids > NamedChunkIdsPlugin
+<i> [webpack.Progress]  | 23 ms sealing > chunk ids
+<i> [webpack.Progress]  | 40 ms sealing > after chunk id optimization
+<i> [webpack.Progress]  |  | 16 ms record modules > RecordIdsPlugin
+<i> [webpack.Progress]  | 16 ms sealing > record modules
+<w> [webpack.Progress]  | 1780 ms sealing > module hashing
+<i> [webpack.Progress]  | 391 ms sealing > code generation
+<i> [webpack.Progress]  | 353 ms sealing > runtime requirements
+<i> [webpack.Progress]  | 666 ms sealing > hashing
+<i> [webpack.Progress]  | 32 ms sealing > module assets processing
+<w> [webpack.Progress]  | 1789 ms sealing > chunk assets processing
+<i> [webpack.Progress]  |  | 386 ms asset processing > LanugagePackChunks
+<i> [webpack.Progress]  |  | 11 ms asset processing > WrapperPlugin
+<i> [webpack.Progress]  | 398 ms sealing > asset processing
+<i> [webpack.Progress]  | 94 ms sealing > after asset optimization
+<e> [webpack.Progress] 17707 ms sealing
+<w> [webpack.Progress]  | 9898 ms emitting > emit
+<w> [webpack.Progress] 9900 ms emitting
+<i> [webpack.Progress]  |  | 320 ms plugins > webpack-build-notifier
+<i> [webpack.Progress]  |  | 33 ms plugins > webpack-dev-server
+<i> [webpack.Progress]  | 353 ms done > plugins
+<i> [webpack.Progress] 353 ms done
+⚠ ｢wdm｣: Hash: 2281fd3d821b171e05d7
+Version: webpack 5.0.0-beta.24
+Time: 41941 ms
+Built at: 2020-08-07 10:16:41
+Entrypoint vendor = assets/manifest.d55d354e9561af6f87e0.js assets/vendor.a8cae8c3314e24b58401.js
+Entrypoint vendor-entry = assets/manifest.d55d354e9561af6f87e0.js assets/vendor-entry.1c051e12fc2680ff6199.js
+Entrypoint commons [big] = assets/manifest.d55d354e9561af6f87e0.js assets/commons.27f9e5ebb4ea8265a686.js (assets/error-modal.445cf74c8219cb8b3a2a0136bd14bc32.svg)
+Entrypoint commons-entry [big] = assets/manifest.d55d354e9561af6f87e0.js assets/commons-entry.644a847a6bfe74576761.js (assets/error-modal.445cf74c8219cb8b3a2a0136bd14bc32.svg)
+Entrypoint jira-spa = assets/manifest.d55d354e9561af6f87e0.js assets/jira-spa~atlaskit.085f9a3a61503d4549e8.js assets/jira-spa~vendor.565361416e372f7c5947.js assets/jira-spa.befe64d63c717e472fcb.js (assets/error-modal.445cf74c8219cb8b3a2a0136bd14bc32.svg assets/error.000de722eb744cbf1391a18c82205533.svg assets/image.0d359ff4c12281f625895c64ac7356f1.svg assets/not-found-error.cf5726ecfd7d655c51d5b4427e716990.svg) (prefetch: assets/atlassiansox-cross-flow-support-deferred.06bd1b4ee9181d6ba178.js)
+Entrypoint ssr-hydration-fix = assets/manifest.d55d354e9561af6f87e0.js assets/ssr-hydration-fix.6dcbcbe0fd55f01d2b9e.js
+Entrypoint loading-bar-controller = assets/manifest.d55d354e9561af6f87e0.js assets/loading-bar-controller.ac8106d93136235e6a57.js
+Entrypoint rapidboard = assets/manifest.d55d354e9561af6f87e0.js assets/rapidboard.7e607a8885093e9ba307.js
+Entrypoint global-issue-navigator = assets/manifest.d55d354e9561af6f87e0.js assets/global-issue-navigator.b577202dc5b7a4e3ee57.js
+Entrypoint issue-app = assets/manifest.d55d354e9561af6f87e0.js assets/issue-app.8bce80fff37c7c81ae0a.js
+Entrypoint track-clicks-before-tti = assets/manifest.d55d354e9561af6f87e0.js assets/track-clicks-before-tti.7c6a56dcf04c5f3e323c.js
+ℹ ｢wdm｣: Compiled with warnings.
